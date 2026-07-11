@@ -5,7 +5,7 @@
 }
 
 body {
-  font-size: 15px;
+  font-size: 15.5px;
   color: #0F233F;
   margin: 0;
   background-color: #F0EFEB;
@@ -21,22 +21,48 @@ ul {
 
 header {
   justify-content: center;
-  border: 1px solid black;
 }
 
 header .container {
   width: 100%;
-  border: 1px solid black;
   justify-content: space-between;
-  max-width: 1300px;
+  max-width: 1200px;
   align-items: center;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 header .container .middle .nav-pages a {
   text-decoration: none;
   color: #0F233F;
+}
+
+.nav-pages li {
+  padding: 41px 20px;
+  transition: color 0.2s, box-shadow 0.2s;
+}
+
+.nav-pages li:hover {
+  box-shadow: inset 0 -3px 0 #0F233F;
+  color: #2b4e7e;
+}
+
+header .container .right button {
+  border: none;
+  background-color: #0F233F;
+  color: #F0EFEB;
+  padding: 14px 55px;
+  border-radius: 25px;
+  font-size: 15px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.logo {
+  display: flex;
 }
