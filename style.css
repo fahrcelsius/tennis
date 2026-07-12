@@ -27,7 +27,7 @@ header {
 }
 
 header:hover {
-  box-shadow: inset 0 50px 50px -50px #ecdca3;
+  box-shadow: inset 0 50px 50px -50px #d8d2b9;
 }
 
 header .container {
@@ -36,6 +36,7 @@ header .container {
   max-width: 1200px;
   align-items: center;
   padding: 0 20px;
+  flex-wrap: wrap;
 }
 
 ul {
@@ -43,6 +44,7 @@ ul {
   margin: 0;
   padding: 0;
   white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 header .container .middle .nav-pages a {
@@ -75,19 +77,25 @@ header .container .right button {
   display: flex;
 }
 
-/* section one */
+/*============= section one ==============*/
 
-.section-one,
+/* .section-one,
 .section-one .container,
 .section-one .container .left,
 .section-one .container .right {
   border: 1px solid black;
-}
+} */
 
 .section-one,
 .section-one .container,
-.section-one .container .left {
+.section-one .container .left,
+.section-one .container .right,
+.section-one .container .right .bottom {
   display: flex;
+}
+
+.section-one .container img {
+  border-radius: 25px;
 }
 
 .section-one {
@@ -95,20 +103,89 @@ header .container .right button {
 }
 
 .section-one .container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 80px 20px;
+  width: 1350px;
+  padding: 35px 10px;
 }
 
 .section-one .container .left {
   justify-content: center;
-  width: 33.3%;
+  width: 40%;
+  position: relative;
 }
 
 .section-one .container .right {
-  width: 66.6%;
+  flex-direction: column ;
+  padding: 0 15px;
+  width: 60%;
 }
 
-/* img {
+img {
   opacity: 0.7;
-} */
+}
+
+.section-one .container .left .people {
+  width: 500px;
+  object-fit: cover;
+}
+
+.section-one .container .left .tennis {
+  height: 100px;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.section-one .container .right .top {
+  font-size: 65px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.section-one .container .right .bottom .left {
+  width: 50%;
+  flex-direction: column;
+  position: relative;
+}
+
+.section-one .container .right .bottom .left button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+  background-color: #0F233F;
+  color: #F0EFEB;
+  padding: 14px 70px;
+  border-radius: 25px;
+  font-size: 15px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.section-one .container .right .bottom .right {
+  padding: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 17px;
+  padding: 0 20px;
+  gap: 25px;
+  width: 50%;
+}
+
+.section-one .container .right .bottom .right p {
+  margin: 0;
+  line-height: 30px;
+}
+
+.section-one .container .right .bottom .right button {
+  border: none;
+  background-color: #0F233F;
+  color: #F0EFEB;
+  padding: 14px 30px;
+  border-radius: 25px;
+  font-size: 15px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+
