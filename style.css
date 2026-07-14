@@ -1,16 +1,41 @@
 @font-face {
-  font-family: 'Roboto';
-  src: url(/assets/fonts/roboto-v51-latin-500.woff2);
+  font-family: 'abc';
+  src: url('./assets/fonts/inter-v20-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'abc';
+  src: url('./assets/fonts/inter-v20-latin-300.woff2') format('woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'abc';
+  src: url('./assets/fonts/inter-v20-latin-500.woff2') format('woff2');
   font-weight: 500;
 }
+
+@font-face {
+  font-family: 'abc';
+  src: url('./assets/fonts/inter-v20-latin-700.woff2') format('woff2');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'abc';
+  src: url('./assets/fonts/inter-v20-latin-900.woff2') format('woff2');
+  font-weight: 900;
+}
+
 
 body {
   font-size: 15.5px;
   color: #0F233F;
   margin: 0;
   background-color: #F0EFEB;
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: 'abc';
+  font-weight: 500;
 }
 
 /* header */
@@ -119,10 +144,6 @@ header .container .right button {
   width: 60%;
 }
 
-img {
-  opacity: 0.7;
-}
-
 .section-one .container .left .people {
   width: 500px;
   object-fit: cover;
@@ -146,6 +167,7 @@ img {
   width: 50%;
   flex-direction: column;
   position: relative;
+  flex: 0;
 }
 
 .section-one .container .right .bottom .left button {
@@ -174,10 +196,10 @@ img {
 
 .section-one .container .right .bottom .right p {
   margin: 0;
-  line-height: 30px;
+  line-height: 1.5;
 }
 
-.section-one .container .right .bottom .right button {
+button {
   border: none;
   background-color: #0F233F;
   color: #F0EFEB;
@@ -187,5 +209,88 @@ img {
   white-space: nowrap;
   cursor: pointer;
 }
+
+/* ====== section two ======= */
+
+.section-two,
+.section-two .container,
+.section-two .container .top,
+.section-two .container .below .left,
+.section-two .container .below .right {
+  border: 1px solid black;
+}
+
+* {
+  border: 1px solid grey;
+}
+
+.section-two,
+.section-two .container,
+.section-two .container .below,
+.section-two .container .below .right,
+.section-two .container .top {
+  display: flex;
+}
+
+.section-two {
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-two .container {
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  align-items: center;
+}
+
+.section-two .container .top {
+  background-color: #0F233F;
+  color: white;
+  border-radius: 50px;
+  height: 100px;
+  width: 1200px;
+  font-size: 30px;
+  padding: 30px;
+  align-items: center;
+  margin: 90px 0;
+}
+
+.section-two .container .top .left {
+  width: 300px;
+}
+
+.partner {
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.section-two .container .below .left {
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+
+.section-two .container .below .left .title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.section-two .container .below .right {
+  width: 50%;
+  flex-grow: 0;
+  gap: 25px;
+}
+
+.section-two .container .below .right .right-right {
+  gap: 25px;
+}
+
+.section-two .container .below {
+  justify-content: center;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
 
 
