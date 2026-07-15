@@ -52,7 +52,7 @@ header {
 }
 
 header:hover {
-  box-shadow: inset 0 50px 50px -50px #d8d2b9;
+  box-shadow: inset 0 50px 50px -50px #bdb48f;
 }
 
 header .container {
@@ -369,12 +369,14 @@ img {
   width: 50%;
   padding-left: 20px;
   font-weight: 400;
+  display: block;
 }
 
 .section-four .container .right .title {
   font-size: 45px;
   margin: 0;
   font-weight: 700;
+  line-height: 1;
 }
 
 .section-four .container .right li:before {
@@ -382,7 +384,24 @@ img {
   padding-right: 5px;
 }
 
+.section-four .container .right span {
+  font-weight: 700;
+}
+
+.section-four .container .right p {
+  line-height: 1.5;
+}
+
+.section-four .container .right ul {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.section-four .container .right li {
+  padding: 5px;
+}
+
 /* * {
-  border: 1px solid grey;
+  outline: 1px solid grey;
 } */
 
