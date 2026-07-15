@@ -35,7 +35,6 @@ body {
   margin: 0;
   background-color: #F0EFEB;
   font-family: 'abc';
-  font-weight: 500;
 }
 
 /* header */
@@ -322,6 +321,7 @@ img {
   line-height: 1.7;
   display: flex;
   align-items: flex-end;
+  font-weight: 500;
 }
 
 .boxes.yellow {
@@ -400,8 +400,65 @@ img {
 .section-four .container .right li {
   padding: 5px;
 }
-
-/* * {
+/* 
+* {
   outline: 1px solid grey;
 } */
+
+/* ======= section five ======== */
+
+.section-five,
+.section-five .container,
+.section-five .container .location-container {
+  display: flex;
+}
+
+.section-five {
+  justify-content: center;
+  margin: 150px 0;
+}
+
+.section-five .container {
+  flex-direction: column;
+  background-color: #0F233F;
+  color: white;
+  box-sizing: border-box;
+  max-width: 1280px;
+  height: 250px;
+  padding: 50px;
+  border-radius: 55px;
+}
+
+.section-five .container .title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700; 
+  margin-bottom: 50px;
+}
+
+.section-five .container .location-container {
+  text-align: center;
+  gap: 30px;
+  bottom: -50px;
+}
+
+.section-five .container .location {
+  background-color: #F0EFEB;
+  color: #0F233F;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 25px;
+  box-shadow: 0 16px 20px rgba(128, 128, 128, 0.172);
+  width: 50%;
+}
+
+.section-five .container .location-title {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.icon {
+  margin: 30px;
+}
 
