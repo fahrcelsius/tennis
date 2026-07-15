@@ -86,15 +86,25 @@ header .container .middle .nav-pages a {
   color: #2b4e7e;
 }
 
-header .container .right button {
+button {
   border: none;
   background-color: #0F233F;
   color: #F0EFEB;
-  padding: 14px 55px;
+  padding: 14px 30px;
   border-radius: 25px;
   font-size: 15px;
   white-space: nowrap;
   cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  background-color: #0f233fd5;
+  box-shadow: 0 8px 15px rgba(128, 128, 128, 0.438);
+}
+
+header .container .right button {
+  padding: 14px 55px;
 }
 
 .logo {
@@ -167,14 +177,7 @@ header .container .right button {
   position: absolute;
   bottom: 0;
   right: 0;
-  border: none;
-  background-color: #0F233F;
-  color: #F0EFEB;
   padding: 14px 70px;
-  border-radius: 25px;
-  font-size: 15px;
-  white-space: nowrap;
-  cursor: pointer;
 }
 
 .section-one .container .right .bottom .right {
@@ -189,17 +192,6 @@ header .container .right button {
 .section-one .container .right .bottom .right p {
   margin: 0;
   line-height: 1.5;
-}
-
-button {
-  border: none;
-  background-color: #0F233F;
-  color: #F0EFEB;
-  padding: 14px 30px;
-  border-radius: 25px;
-  font-size: 15px;
-  white-space: nowrap;
-  cursor: pointer;
 }
 
 /* ====== section two ======= */
@@ -400,10 +392,6 @@ img {
 .section-four .container .right li {
   padding: 5px;
 }
-/* 
-* {
-  outline: 1px solid grey;
-} */
 
 /* ======= section five ======== */
 
@@ -416,6 +404,7 @@ img {
 .section-five {
   justify-content: center;
   margin: 150px 0;
+  padding-bottom: 150px;
 }
 
 .section-five .container {
@@ -449,6 +438,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   padding: 25px;
+  padding-bottom: 15px;
   box-shadow: 0 16px 20px rgba(128, 128, 128, 0.172);
   width: 50%;
 }
@@ -458,7 +448,119 @@ img {
   font-weight: 500;
 }
 
-.icon {
+.section-five .container .location-container .icon {
   margin: 30px;
+}
+
+/* ====== section six ======== */
+
+
+/* * {
+  outline: 1px solid grey;
+} */
+
+.section-six,
+.section-six .container,
+.section-six .container .right {
+  display: flex;
+}
+
+.section-six {
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.section-six .container {
+  max-width: 1280px;
+}
+
+.section-six .container .left {
+  width: 35%;
+  padding: 10px 40px 10px 0;
+}
+
+.section-six .container .left .title {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-six .container .left .description {
+  margin: 20px 0;
+}
+
+.section-six .container .left .or {
+  background-color: #E6E3D2;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.section-six .container .left .button-container {
+  background-color: #0F233F;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.section-six .container .left button {
+  margin: 0 5px;
+  width: 50%;
+  transition: 0.2s;
+}
+
+.section-six .container .right {
+  width: 65%;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.shopee:hover {
+  background-color: #EE4D2D;
+  color: white;
+}
+
+.tokopedia:hover {
+  background-color: #42B549;
+  color: white;
+  box-shadow: none;
+}
+
+.socmed-box {
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.socmed-box .link {
+  margin: 0;
+}
+
+.icon {
+  display: block;
+  margin: 0;
+}
+
+.socmed-box.blue {
+  background-color: #0F233F;
+  color: white;
+}
+
+.socmed-box.yellow {
+  background-color: #E6E3D2;
 }
 
