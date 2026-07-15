@@ -6,6 +6,13 @@
 
 @font-face {
   font-family: 'abc';
+  src: url('./assets/fonts/inter-v20-latin-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'abc';
   src: url('./assets/fonts/inter-v20-latin-300.woff2') format('woff2');
   font-weight: 300;
 }
@@ -611,7 +618,65 @@ img {
   border-radius: 25px;
   height: 200px;
   padding: 20px;
+  font-size: 16px;
   padding-top: 50px;
   box-sizing: border-box;
+}
+
+/* ====== section eight ======= */
+
+.section-eight {
+  display: flex;
+  justify-content: center;
+}
+
+.section-eight .container {
+  max-width: 1280px;
+}
+
+.section-eight .title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.section-eight .review-container {
+  display: flex;
+  gap: 25px;
+}
+
+.desc {
+  font-style: italic;
+  font-size: 17.5px;
+}
+
+.section-eight .review {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  background-color: #E6E3D2;
+  padding: 40px;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 50%;
+  gap: 20px;
+}
+
+.section-eight .review img {
+  align-self: flex-start;
+}
+
+.section-eight .review p {
+  margin: 0;
+}
+
+.section-eight .review .author {
+  font-weight: 500;
+  font-size: 19px;
+}
+
+.section-eight .review .status {
+  font-size: 14px;
 }
 
