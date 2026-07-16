@@ -734,3 +734,12 @@ img {
   box-shadow: none;
 }
 
+/* ====== footer ====== */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 27px 0;
+  font-style: italic;
+}
+
